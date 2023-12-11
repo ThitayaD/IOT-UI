@@ -1,0 +1,206 @@
+User
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  width:2352px;
+  height:-1170px;
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.block {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.left-block {
+  flex-grow: 1;
+  height: 480px;
+  background: linear-gradient(to top left, #bbafaf, #c8c8c8b1);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.right-block {
+  height: 480px;
+  width: 520px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Distribute space evenly */
+  align-items: center; /* Center items vertically */
+  /* color: white; */
+}
+
+.bus-table-container {
+  height: 400px; /* Set a fixed height */
+  overflow-y: scroll; /* Allow vertical scrolling */
+}
+
+.bus-table{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center; /* Distribute space evenly */
+  align-items: center; /* Center items vertically */
+  position: absolute;
+  margin-top: 70px;
+  margin-left: -700px;
+}
+
+.bus-table thead{
+  font-size: 25px;
+}
+
+.bus-table th{
+  margin: 10px 10px 10px 10px;
+  padding: 0px 30px; 
+}
+
+.bus-table td{
+  margin: 15px 5px 15px 5px;
+  padding: 0px 30px; 
+  font-size: 20px;  
+}
+
+.header-wrapper{
+  background: linear-gradient(to left, #042792, #98bef0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Distribute space evenly */
+  align-items: center; /* Center items vertically */
+  border-radius: 30px 30px 30px 30px;
+  color: white;
+}
+
+
+.child-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Distribute space evenly */
+  align-items: center; /* Center items vertically */
+  border-radius: 20px 20px 20px 20px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 520px;
+}
+
+.child-wrapper:nth-child(odd){
+  background: #a2b9db;
+}
+
+.child-wrapper:nth-child(even){
+  background: #6e87ab;
+}
+
+
+.box-container {
+  display: flex;
+  flex-direction: column; /* Arrange boxes vertically */
+  align-items: center; /* Center items horizontally */
+  margin-top:100px; /* Add some space between info and boxes */
+  margin-left:220px;
+}
+
+.box {  
+  width: 180px; /* Set the width as per your requirement */
+  height: 100px; /* Set the height as per your requirement */
+  background-color: #ccc; /* Add your preferred background color */
+  border-radius: 10px; /* Add border radius for curved corners */
+  margin-bottom: 20px; /* Add some space between the boxes */
+}
+
+.box.top{
+  background: linear-gradient(to bottom right, #c6b0d1, #5447bd); /* Blue to light blue gradient */
+}
+
+.box.bottom {
+  background: linear-gradient(to bottom, #6274aa, #a2c2ec); /* Blue to light blue gradient */
+}
+
+.box-text {
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.box-text-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.box-text-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+  margin-top: -40px;
+}
+
+.box-text-temp {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: -18px
+}
+
+.box-text-msg {
+  font-size: 15px;
+  color: white;
+  font-weight: 400;
+  margin-left: 40px;
+  margin-top: -40px;
+
+}
+
+.section {
+  padding: 10px;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.section h2 {
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center; /* Center the text */
+  width: 100%; /* Make sure text takes full width */
+}
+
+.bus, .arrival {
+  flex: 1; /* Each section takes equal space */
+}
+
+.destination {
+  flex: 2; /* Twice the height of bus and arrival sections */
+}
+
+.info, .icons {
+  /* Add styles for info and icons here */
+} 
+
+.bus-location {
+  width: 90px;
+  height : 90px;
+  margin-top: 0px;
+  margin-left: 45px; 
+
+}
+
